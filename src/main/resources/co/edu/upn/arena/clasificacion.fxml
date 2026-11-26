@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="raizClasificacion"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.upn.arena.ClasificacionController"
+      styleClass="pagina"
+      spacing="15">
+
+    <HBox spacing="15" alignment="CENTER_LEFT">
+        <Label text="Clasificación" styleClass="titulo"/>
+        <Button text="Simular estrellas" styleClass="boton-principal" onAction="#simularClasificacion"/>
+    </HBox>
+
+    <HBox spacing="15" VBox.vgrow="ALWAYS">
+
+        <VBox spacing="8" HBox.hgrow="ALWAYS">
+            <Label text="Solos (7 - 100 ★)" styleClass="subtitulo"/>
+            <TableView fx:id="tblSolos" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colPuestoSolos" text="Puesto" prefWidth="65"/>
+                    <TableColumn fx:id="colNombreSolos" text="Participante" prefWidth="130"/>
+                    <TableColumn fx:id="colEstrellasSolos" text="Estrellas" prefWidth="80"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+
+        <VBox spacing="8" HBox.hgrow="ALWAYS">
+            <Label text="Dúos (5 - 100 ★)" styleClass="subtitulo"/>
+            <TableView fx:id="tblDuos" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colPuestoDuos" text="Puesto" prefWidth="65"/>
+                    <TableColumn fx:id="colNombreDuos" text="Participante" prefWidth="130"/>
+                    <TableColumn fx:id="colEstrellasDuos" text="Estrellas" prefWidth="80"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+
+        <VBox spacing="8" HBox.hgrow="ALWAYS">
+            <Label text="Tríos (3 - 100 ★)" styleClass="subtitulo"/>
+            <TableView fx:id="tblTrios" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colPuestoTrios" text="Puesto" prefWidth="65"/>
+                    <TableColumn fx:id="colNombreTrios" text="Participante" prefWidth="130"/>
+                    <TableColumn fx:id="colEstrellasTrios" text="Estrellas" prefWidth="80"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+
+</VBox>

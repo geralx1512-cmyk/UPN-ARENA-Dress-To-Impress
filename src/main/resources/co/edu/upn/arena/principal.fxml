@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane fx:id="raiz"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.upn.arena.PrincipalController">
+    <left>
+        <VBox styleClass="menu">
+            <Label text="UPN Arena" styleClass="logo"/>
+            <Button text="Modelos" onAction="#verModelos"/>
+            <Button text="Grupos" onAction="#verGrupos"/>
+            <Button text="Castings" onAction="#verPartidos"/>
+            <Button text="Tabla" onAction="#verClasificacion"/>
+
+            <ComboBox fx:id="cmbModo" onAction="#cambiarModo" promptText="Modo">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Predeterminado"/>
+                        <String fx:value="Oscuro"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            <Label fx:id="lblEstadoModo" text="Modo: Predeterminado" styleClass="texto-modo" wrapText="true"/>
+        </VBox>
+    </left>
+    <center>
+    <StackPane fx:id="contenido">
+        <VBox alignment="CENTER" spacing="16">
+            <Label text="¡Bienvenido a UPN Arena!" styleClass="titulo"/>
+            <ImageView fitWidth="560" fitHeight="560" preserveRatio="true">
+                <image>
+                    <Image url="@Imagenes/dti_logo.png"/>
+                </image>
+            </ImageView>
+        </VBox>
+    </StackPane>
+</center>
+
+</BorderPane>

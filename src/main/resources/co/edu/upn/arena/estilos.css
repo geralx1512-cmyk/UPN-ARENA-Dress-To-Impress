@@ -1,0 +1,223 @@
+.root {
+    -fx-font-family: "Century Gothic", "Verdana", "Bahnschrift", sans-serif;
+    -fx-font-size: 17px;
+    -fx-background-color: #e6b3df;
+}
+
+.logo {
+    -fx-font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    -fx-font-size: 45px;
+}
+
+.titulo {
+    -fx-font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    -fx-font-size: 40px;
+}
+
+/* Modo oscuro general */
+.modo-oscuro {
+    -fx-background-color: #141722;
+}
+
+.modo-oscuro .pagina {
+    -fx-background-color: #141722;
+}
+
+.modo-oscuro .titulo {
+    -fx-text-fill: #f205cb;
+}
+
+.modo-oscuro .subtitulo {
+    -fx-text-fill: #f88ae9;
+}
+
+.modo-oscuro .label {
+    -fx-text-fill: #EAECEF;
+}
+
+.modo-oscuro .menu .label {
+    -fx-text-fill: #F2B705;
+}
+
+.modo-oscuro .texto-modo {
+    -fx-text-fill: #EAECEF;
+}
+
+.modo-oscuro .panel-modo {
+    -fx-background-color: #141722;
+}
+
+.modo-oscuro .text-field,
+.modo-oscuro .combo-box {
+    -fx-background-color: #33233d;
+    -fx-text-fill: white;
+}
+
+.modo-oscuro .table-view {
+    -fx-background-color: #2f1e33;
+    -fx-control-inner-background: #2e1e33;
+    -fx-text-fill: rgb(251, 243, 252);
+}
+
+/* Menú lateral */
+.menu {
+    -fx-background-color: #b94bab;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-pref-width: 200;
+}
+
+.logo {
+    -fx-text-fill: #d3ca97;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 16 0;
+}
+
+.menu .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-pref-width: 160;
+    -fx-alignment: center-left;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.menu .button:hover {
+    -fx-background-color: #ec8fd8;
+}
+
+/* Cada pantalla */
+.pagina {
+    -fx-padding: 24;
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #640b7a;
+}
+
+.subtitulo {
+    -fx-font-weight: bold;
+    -fx-text-fill: #be187f;
+}
+
+/* Botones */
+.boton-principal {
+    -fx-background-color: #634692;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+
+.boton-peligro {
+    -fx-background-color: #cc1931;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+
+/* ===== MALE: Tonos azules turquesa ===== */
+.tema-male,
+.tema-male .pagina {
+    -fx-background-color: #afd9ff;
+}
+
+.tema-male .titulo {
+    -fx-text-fill: #085F6B;
+}
+
+.tema-male .subtitulo {
+    -fx-text-fill: #0B8793;
+}
+
+.tema-male .panel-modo {
+    -fx-background-color: #afd9ff;
+}
+
+.tema-male .boton-principal {
+    -fx-background-color: #0B8793;
+}
+
+/* ===== INBETWEEN: Tonos violetas ===== */
+.tema-inbetween,
+.tema-inbetween .pagina {
+    -fx-background-color: #ceafff;
+}
+
+.tema-inbetween .titulo {
+    -fx-text-fill: #4B1D91;
+}
+
+.tema-inbetween .subtitulo {
+    -fx-text-fill: #6D28D9;
+}
+
+.tema-inbetween .panel-modo {
+    -fx-background-color: #ceafff;
+}
+
+.tema-inbetween .boton-principal {
+    -fx-background-color: #6D28D9;
+}
+
+/* ===== NONE: Tonos amarillos ===== */
+.tema-none,
+.tema-none .pagina {
+    -fx-background-color: #FDEAA3;
+}
+
+.tema-none .titulo {
+    -fx-text-fill: #7A5800;
+}
+
+.tema-none .subtitulo {
+    -fx-text-fill: #9A6B00;
+}
+
+.tema-none .panel-modo {
+    -fx-background-color: #FDEAA3;
+}
+
+.tema-none .boton-principal {
+    -fx-background-color: #e7bd01;
+    -fx-text-fill: white;
+
+}
+
+/* Fondo y bordes de la tabla en modo oscuro */
+.modo-oscuro .table-view {
+    -fx-background-color: #1f1b24;
+    -fx-border-color: #4a3f5c;
+}
+
+.modo-oscuro .table-view .column-header-background,
+.modo-oscuro .table-view .column-header,
+.modo-oscuro .table-view .filler {
+    -fx-background-color: #402541;
+}
+
+.modo-oscuro .table-view .column-header .label {
+    -fx-text-fill: #f5f3f7;
+    -fx-font-weight: bold;
+}
+
+.modo-oscuro .table-view .table-row-cell {
+    -fx-background-color: #1f1b24;
+    -fx-border-color: #2f283a;
+}
+
+.modo-oscuro .table-view .table-row-cell:odd {
+    -fx-background-color: #26202e;
+}
+
+.modo-oscuro .table-view .table-cell {
+    -fx-text-fill: #f5f3f7;
+}
+
+.modo-oscuro .table-view .table-row-cell:selected {
+    -fx-background-color: #6b46c1;
+}
+
+.modo-oscuro .table-view .placeholder .label {
+    -fx-text-fill: #cfc8d8;
+}
